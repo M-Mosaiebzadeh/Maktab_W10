@@ -157,9 +157,9 @@ public class Tic_Tac_Toe {
         // بعد از اینکه کانتر بالای 4 شد از متد چک میخواهد تا شرایط را چک کند
         if (counter > 4) {
             // اگر شرط true باشد میگوید کاربر با اسم فلان برنده شده است
-            if (checkCondition(digit - 1, player1.symbol)) {
-                System.out.println(player1.name + " Win round: " + round + " in " + counter + " move");
-                player1.point++;
+            if (checkCondition(digit - 1, player.symbol)) {
+                System.out.println(player.name + " Win round: " + round + " in " + counter + " move");
+                player.point++;
                 round++;
                 return true;
             }
